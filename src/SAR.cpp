@@ -114,6 +114,7 @@ bool SAR::Load(CreateInterfaceFn interfaceFactory, CreateInterfaceFn gameServerF
 				this->cheats->Init();
 
 				this->features->AddFeature<Listener>(&listener);
+				this->features->AddFeature<PortalCounter>(&portalCounter);
 
 				if (this->game->Is(SourceGame_Portal2 | SourceGame_ApertureTag)) {
 					this->features->AddFeature<WorkshopList>(&workshop);
@@ -133,6 +134,9 @@ bool SAR::Load(CreateInterfaceFn interfaceFactory, CreateInterfaceFn gameServerF
 
 				if (listener) {
 					listener->Init();
+				}
+				if (portalCounter) {
+					portalCounter->Init();
 				}
 
 				this->SearchPlugin();

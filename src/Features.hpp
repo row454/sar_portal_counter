@@ -30,3 +30,4 @@
 #include "Features/Timer/Timer.hpp"
 #include "Features/TimescaleDetect.hpp"
 #include "Features/WorkshopList.hpp"
+#include "Features/PortalCounter.hpp"

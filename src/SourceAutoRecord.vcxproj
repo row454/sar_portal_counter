@@ -14,7 +14,7 @@
     <ProjectGuid>{3F6459A9-566E-4CAC-A412-C03FF51D67E9}</ProjectGuid>
     <RootNamespace>SourceAutoRecord</RootNamespace>
     <ProjectName>SourceAutoRecord</ProjectName>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -146,6 +146,7 @@
     <ClCompile Include="Features\DiscordRichPresence.cpp" />
     <ClCompile Include="Features\Hud\PlacementHelperHud.cpp" />
     <ClCompile Include="Features\Hud\StrafeHud.cpp" />
+    <ClCompile Include="Features\PortalCounter.cpp" />
     <ClCompile Include="Features\Routing\Ruler.cpp" />
     <ClCompile Include="Features\Routing\StepSlopeBoostDebug.cpp" />
     <ClCompile Include="Features\SeasonalASCII.cpp" />
@@ -347,6 +348,7 @@
     <ClInclude Include="Features\Demo\GhostRenderer.hpp" />
     <ClInclude Include="Features\Demo\GhostLeaderboard.hpp" />
     <ClInclude Include="Features\Hud\StrafeHud.hpp" />
+    <ClInclude Include="Features\PortalCounter.hpp" />
     <ClInclude Include="Features\Routing\Ruler.hpp" />
     <ClInclude Include="Features\Routing\StepSlopeBoostDebug.hpp" />
     <ClInclude Include="Features\SeasonalASCII.hpp" />
